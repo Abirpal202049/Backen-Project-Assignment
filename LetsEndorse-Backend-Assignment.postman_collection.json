@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "b815a08e-a733-4bcd-9b0e-3437e0a61e3c",
+		"name": "LetsEndorse-Backend-Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18346556"
+	},
+	"item": [
+		{
+			"name": "SignUp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullName\" : \"Saikat\",\r\n    \"email\" : \"saikat@gmail.com\",\r\n    \"mobileNumber\" : 9434188586,\r\n    \"password\" : \"123456\",\r\n    \"confirmPassword\" : \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/v1/signup",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LogIn",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"saikat@gmail.com\",\r\n    \"password\" : \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/v1/login",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reset Password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"password\" : \"123456\", \r\n    \"newPassword\" : \"abc@123\", \r\n    \"confirmNewPassword\" : \"abc@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/user/resetpassword",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"resetpassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User Details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullName\" : \"Saikat\",\r\n    \"email\" : \"saikatbhu@gmail.com\",\r\n    \"mobileNumber\" : 9434188560\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/user/updateDetails",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"updateDetails"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
